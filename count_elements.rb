@@ -1,4 +1,5 @@
 def count_elements(array)
-  # code goes here
+  new_hash = {}
+  array.uniq.each {|word| new_hash[word] = array.count(word) }
+  new_hash
 end
- 
